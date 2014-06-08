@@ -22,6 +22,20 @@
 			remoteGlobalIDString = 28435731193F71C6005BE04B;
 			remoteInfo = TRZSyncScrollNavBarTitle;
 		};
+		28D3C90D19443EFC00D8A6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2843572A193F71C6005BE04B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28435731193F71C6005BE04B;
+			remoteInfo = TRZSyncScrollNavBarTitle;
+		};
+		28D3C90F19443EFC00D8A6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2843572A193F71C6005BE04B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28435731193F71C6005BE04B;
+			remoteInfo = TRZSyncScrollNavBarTitle;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +155,8 @@
 			);
 			dependencies = (
 				28435746193F71C7005BE04B /* PBXTargetDependency */,
+				28D3C90E19443EFC00D8A6E6 /* PBXTargetDependency */,
+				28D3C91019443EFC00D8A6E6 /* PBXTargetDependency */,
 			);
 			name = TRZSyncScrollNavBarTitleTests;
 			productName = TRZSyncScrollNavBarTitleTests;
@@ -229,6 +245,16 @@
 			target = 28435731193F71C6005BE04B /* TRZSyncScrollNavBarTitle */;
 			targetProxy = 28435745193F71C7005BE04B /* PBXContainerItemProxy */;
 		};
+		28D3C90E19443EFC00D8A6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28435731193F71C6005BE04B /* TRZSyncScrollNavBarTitle */;
+			targetProxy = 28D3C90D19443EFC00D8A6E6 /* PBXContainerItemProxy */;
+		};
+		28D3C91019443EFC00D8A6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28435731193F71C6005BE04B /* TRZSyncScrollNavBarTitle */;
+			targetProxy = 28D3C90F19443EFC00D8A6E6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -277,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -326,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TRZSyncScrollNavBarTitle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -337,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TRZSyncScrollNavBarTitle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +425,7 @@
 				28435750193F71C7005BE04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28435751193F71C7005BE04B /* Build configuration list for PBXNativeTarget "TRZSyncScrollNavBarTitleTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +434,7 @@
 				28435753193F71C7005BE04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
