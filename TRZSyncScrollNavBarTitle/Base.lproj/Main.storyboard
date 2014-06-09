@@ -51,6 +51,7 @@
                     <connections>
                         <outlet property="scrollView" destination="dZb-VK-VTF" id="CpQ-WZ-LOT"/>
                         <outlet property="titleView" destination="IKm-sG-jM6" id="XUs-si-q2h"/>
+                        <outlet property="titleViewWrapper" destination="RZ7-Rn-CcJ" id="ame-TV-V6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

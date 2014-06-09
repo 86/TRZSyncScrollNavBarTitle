@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController, UIScrollViewDelegate {
                             
     @IBOutlet var scrollView : UIScrollView
+    @IBOutlet var titleViewWrapper : UIView
     @IBOutlet var titleView : UIScrollView
     
     override func viewDidLoad() {
@@ -19,6 +21,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.genScrollViewContents(scrollView, pages: 10)
         self.genTitleScrollViewContents(titleView, pages: 10)
         
+        // Add layer mask
+        titleViewWrapper.layer.masksToBounds = true
+        let maskLayer = CAGradientLayer()
+        maskLayer.frame = titleViewWrapper.bounds
+        maskLayer.startPoint = CGPoint(x:0.0, y:0.5)
+        maskLayer.endPoint = CGPoint(x:1.0, y:0.5)
+        let points: Float[] = [0.0, 0.25, 0.75, 1.0]
+        let colors: AnyObject![] = [
+            UIColor(white:1.0, alpha:0.0).CGColor,
+            UIColor(white:1.0, alpha:1.0).CGColor,
+            UIColor(white:1.0, alpha:1.0).CGColor,
+            UIColor(white:1.0, alpha:0.0).CGColor,
+        ]
+        maskLayer.locations = points
+        maskLayer.colors = colors
+        titleViewWrapper.layer.mask = maskLayer
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +70,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         for n in 0..pages {
             var i = CGFloat(n)
             var title = UILabel(frame: CGRect(x: width * i, y: 0.0, width: width, height: height))
+//            var val = 0.05 * i + 0.8
+//            title.backgroundColor = UIColor(red: val, green: val - 0.2, blue: val - 0.4, alpha: 1.0)
             title.textAlignment = NSTextAlignment.Center
             title.text = "Page \(n+1)"
             titleView.addSubview(title)

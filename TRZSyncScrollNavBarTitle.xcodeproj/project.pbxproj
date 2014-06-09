@@ -12,6 +12,7 @@
 		2843573D193F71C6005BE04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2843573B193F71C6005BE04B /* Main.storyboard */; };
 		2843573F193F71C6005BE04B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843573E193F71C6005BE04B /* Images.xcassets */; };
 		2843574B193F71C7005BE04B /* TRZSyncScrollNavBarTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843574A193F71C7005BE04B /* TRZSyncScrollNavBarTitleTests.swift */; };
+		28D3C9151946108300D8A6E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D3C9141946108300D8A6E6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		28435744193F71C7005BE04B /* TRZSyncScrollNavBarTitleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZSyncScrollNavBarTitleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28435749193F71C7005BE04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2843574A193F71C7005BE04B /* TRZSyncScrollNavBarTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRZSyncScrollNavBarTitleTests.swift; sourceTree = "<group>"; };
+		28D3C9141946108300D8A6E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D3C9151946108300D8A6E6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 			children = (
 				28435734193F71C6005BE04B /* TRZSyncScrollNavBarTitle */,
 				28435747193F71C7005BE04B /* TRZSyncScrollNavBarTitleTests */,
+				28D3C9131946105D00D8A6E6 /* Frameworks */,
 				28435733193F71C6005BE04B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +125,14 @@
 				28435749193F71C7005BE04B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28D3C9131946105D00D8A6E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28D3C9141946108300D8A6E6 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
